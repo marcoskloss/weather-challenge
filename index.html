@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Wheater</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Previsão do Tempo</h1>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Insira aqui o nome da cidade">
+        <img src="./assets/search.svg" id="search-btn" alt="Buscar cidades">
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <p id="address">Niterói, RJ - Brasil</p>
+          <img src="./assets/close.svg" class="close-btn" alt="Fechar card"/>
+        </div>
+        <div class="today-temperature-container">
+          <h2 id="temperature"> 20°C Nublado</h2>  
+        </div>
+        <div class="info">
+          <p class="max-min">
+            <img src="./assets/arrow.svg" class="arrow-down arrow">
+            <strong>16°</strong>
+            <img src="./assets/arrow.svg" class="arrow-up arrow">
+            <strong>25°</strong>
+          </p>
+          <p class="sensation">Sensação <strong>19°C</strong></p>
+          <p class="wind-speed">Vento <strong>18km/h</strong></p>
+          <p class="humidity">Humidade <strong>89%</strong></p>
+        </div>
+        <hr class="card-divider">
+        <div class="week-temperature-container">
+          <div id="tuesday-temperature">
+            <h4 class="week-day">Terça</h4>
+            <p class="week-temperature">18° 26°</p>
+          </div>
+
+          <div class="week-temperature" id="wednesday-temperature">
+            <h4 class="week-day">Quarta</h4>
+            <p class="week-temperature">18° 26°</p>
+          </div>
+
+          <div class="week-temperature" id="thursday-temperature">
+            <h4 class="week-day">Quinta</h4>
+            <p class="week-temperature">18° 26°</p>
+          </div>
+
+          <div class="week-temperature" id="friday-temperature">
+            <h4 class="week-day">Sexta</h4>
+            <p class="week-temperature">18° 26°</p>
+          </div>
+
+          <div class="week-temperature" id="satu  rday-temperature">
+            <h4 class="week-day">Sábado</h4>
+            <p class="week-temperature">18° 26°</p>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <hr class="main-divider">
+    <main>
+      <div class="content">
+        <h3 class="subtitle">Capitais</h3>
+         <div class="list-container">
+          <ul class="list" id="first-list">
+            <span class="min">Min</span>
+            <span class="max">Máx</span>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Rio de Janeiro</span>
+            </li>
+          </ul>
+
+          <ul class="list" id="second-list">
+            <span class="min">Min</span>
+            <span class="max">Máx</span>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+            <li class="list-item">
+              <span id="min-temp">18°</span>
+              <span id="max-temp">27°</span>
+              <span id="city-name">Caxias do Sul</span>
+            </li>
+          </ul>
+         </div>
+        </div>
+    </main>
+  </div>
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
